@@ -20,7 +20,7 @@ const Calculator = () => {
         setResult("Error");
       } else {
         const evalResult = eval(input);
-        setResult(evalResult === Infinity ? "Infinity" : evalResult.toString());
+        setResult(evalResult.toString());
       }
     } catch (error) {
       setResult("Error");
